@@ -1,8 +1,14 @@
 <template>
-  <q-card class="fit scroll">
-    <div class="title q-pt-md q-px-md row text-h5 text-bold text-uppercase">{{ content.title }}</div>
-    <div class="stack q-px-md row justify-end text-h6 text-italic text-right text-bold">{{ content.stack }}</div>
-    <div class="description q-px-md">{{ content.description }}</div>
+  <q-card class="fit scroll" :style="`color: ${shiftColor(bgColor, 0.5)};`">
+    <div class="row">
+      <div class="title q-pt-md q-px-md col text-h6 text-bold text-uppercase"
+        :style="`color: ${shiftColor(bgColor, 0.7)};`">{{ content.title }}</div>
+      <div class="year q-pt-md q-px-md col-auto text-overline text-bold text-uppercase">{{ content.year }}</div>
+    </div>
+    <div class="stack q-px-md row text-subtitle2 text-italic text-weight-medium">
+      {{ content.stack }}
+    </div>
+    <div class="description text-body2 q-px-md q-mt-md">{{ content.description }}</div>
     <q-separator class="q-mt-md" />
     <div class="links q-pa-md row q-gutter-md">
       <q-btn glossy rounded :href="content.github" target="_blank"

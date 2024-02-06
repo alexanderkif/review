@@ -1,7 +1,7 @@
 <template>
   <div class="section relative-position overflow-hidden" :style="getBgStyles(bg)">
     <div class="section-image kenburns-top absolute overflow-hidden" :style="getBgImage(bg)"></div>
-
+    <!--
     <svg v-if="bg.wave" id="visual" viewBox="0 0 1400 400" width="1400" height="400" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" version="1.1"
       class="img-move absolute full-height">
@@ -11,11 +11,25 @@
       <path :style="{ fill: bg.wave.color2, fillOpacity: 0.2 }" transform="translate(0,2)"
         d="M0 289L14.7 301C29.3 313 58.7 337 87.8 335C117 333 146 305 175.2 298.3C204.3 291.7 233.7 306.3 262.8 308.3C292 310.3 321 299.7 350.2 297C379.3 294.3 408.7 299.7 437.8 304.3C467 309 496 313 525.2 318.3C554.3 323.7 583.7 330.3 612.8 327C642 323.7 671 310.3 700.2 302.3C729.3 294.3 758.7 291.7 787.8 297C817 302.3 846 315.7 875.2 322.3C904.3 329 933.7 329 962.8 329.7C992 330.3 1021 331.7 1050.2 327.7C1079.3 323.7 1108.7 314.3 1137.8 316.3C1167 318.3 1196 331.7 1225.2 341C1254.3 350.3 1283.7 355.7 1312.8 346.3C1342 337 1371 313 1385.5 301L1400 289L1400 199L1385.5 209.7C1371 220.3 1342 241.7 1312.8 250.3C1283.7 259 1254.3 255 1225.2 247.7C1196 240.3 1167 229.7 1137.8 236.3C1108.7 243 1079.3 267 1050.2 277C1021 287 992 283 962.8 272.3C933.7 261.7 904.3 244.3 875.2 230.3C846 216.3 817 205.7 787.8 201.7C758.7 197.7 729.3 200.3 700.2 217.7C671 235 642 267 612.8 274.3C583.7 281.7 554.3 264.3 525.2 259C496 253.7 467 260.3 437.8 261C408.7 261.7 379.3 256.3 350.2 256.3C321 256.3 292 261.7 262.8 260.3C233.7 259 204.3 251 175.2 259C146 267 117 291 87.8 289.7C58.7 288.3 29.3 261.7 14.7 248.3L0 235Z">
       </path>
-    </svg>
+    </svg> -->
 
     <div class="relative-position fit column q-pa-md">
       <div v-intersection="onIntersection" class="col-auto text-center text-no-wrap text-h3 text-uppercase"
-        :class="visibleClass">{{ name }}</div>
+        :class="visibleClass" :style="`color: ${shiftColor(getGradientColor(bg, 1), 0.5)};`">
+        {{ name }}
+
+        <svg v-if="bg.wave" id="visual" viewBox="0 0 1400 400" width="1400" height="400"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none"
+          version="1.1" class="img-move absolute full-height">
+          <path :style="{ fill: bg.wave.color1, fillOpacity: 0.2 }"
+            d="M0 237L14.7 250.3C29.3 263.7 58.7 290.3 87.8 291.7C117 293 146 269 175.2 261C204.3 253 233.7 261 262.8 262.3C292 263.7 321 258.3 350.2 258.3C379.3 258.3 408.7 263.7 437.8 263C467 262.3 496 255.7 525.2 261C554.3 266.3 583.7 283.7 612.8 276.3C642 269 671 237 700.2 219.7C729.3 202.3 758.7 199.7 787.8 203.7C817 207.7 846 218.3 875.2 232.3C904.3 246.3 933.7 263.7 962.8 274.3C992 285 1021 289 1050.2 279C1079.3 269 1108.7 245 1137.8 238.3C1167 231.7 1196 242.3 1225.2 249.7C1254.3 257 1283.7 261 1312.8 252.3C1342 243.7 1371 222.3 1385.5 211.7L1400 201L1400 87L1385.5 106.3C1371 125.7 1342 164.3 1312.8 166.3C1283.7 168.3 1254.3 133.7 1225.2 127C1196 120.3 1167 141.7 1137.8 145.7C1108.7 149.7 1079.3 136.3 1050.2 124.3C1021 112.3 992 101.7 962.8 107C933.7 112.3 904.3 133.7 875.2 141C846 148.3 817 141.7 787.8 135.7C758.7 129.7 729.3 124.3 700.2 128.3C671 132.3 642 145.7 612.8 135.7C583.7 125.7 554.3 92.3 525.2 83.7C496 75 467 91 437.8 110.3C408.7 129.7 379.3 152.3 350.2 161C321 169.7 292 164.3 262.8 151C233.7 137.7 204.3 116.3 175.2 122.3C146 128.3 117 161.7 87.8 157.7C58.7 153.7 29.3 112.3 14.7 91.7L0 71Z">
+          </path>
+          <path :style="{ fill: bg.wave.color2, fillOpacity: 0.2 }" transform="translate(0,2)"
+            d="M0 289L14.7 301C29.3 313 58.7 337 87.8 335C117 333 146 305 175.2 298.3C204.3 291.7 233.7 306.3 262.8 308.3C292 310.3 321 299.7 350.2 297C379.3 294.3 408.7 299.7 437.8 304.3C467 309 496 313 525.2 318.3C554.3 323.7 583.7 330.3 612.8 327C642 323.7 671 310.3 700.2 302.3C729.3 294.3 758.7 291.7 787.8 297C817 302.3 846 315.7 875.2 322.3C904.3 329 933.7 329 962.8 329.7C992 330.3 1021 331.7 1050.2 327.7C1079.3 323.7 1108.7 314.3 1137.8 316.3C1167 318.3 1196 331.7 1225.2 341C1254.3 350.3 1283.7 355.7 1312.8 346.3C1342 337 1371 313 1385.5 301L1400 289L1400 199L1385.5 209.7C1371 220.3 1342 241.7 1312.8 250.3C1283.7 259 1254.3 255 1225.2 247.7C1196 240.3 1167 229.7 1137.8 236.3C1108.7 243 1079.3 267 1050.2 277C1021 287 992 283 962.8 272.3C933.7 261.7 904.3 244.3 875.2 230.3C846 216.3 817 205.7 787.8 201.7C758.7 197.7 729.3 200.3 700.2 217.7C671 235 642 267 612.8 274.3C583.7 281.7 554.3 264.3 525.2 259C496 253.7 467 260.3 437.8 261C408.7 261.7 379.3 256.3 350.2 256.3C321 256.3 292 261.7 262.8 260.3C233.7 259 204.3 251 175.2 259C146 267 117 291 87.8 289.7C58.7 288.3 29.3 261.7 14.7 248.3L0 235Z">
+          </path>
+        </svg>
+
+      </div>
       <q-card class="col items-stretch no-wrap shadow-8 rounded-borders scroll" :class="isWide ? 'row' : 'column'"
         :style="{ backgroundColor: getGradientColor(bg, 1) + '55' }">
         <div class="col" :class="{ 'col-sm-8': isWide }">
@@ -42,7 +56,7 @@ import {
 import { Section } from './models';
 import ContentComponent from './ContentComponent.vue';
 import SliderComponent from './SliderComponent.vue';
-import { getBgImage, getBgStyles, getGradientColor } from 'src/utils/utils';
+import { getBgImage, getBgStyles, getGradientColor, shiftColor } from 'src/utils/utils';
 
 export default defineComponent({
   name: 'SectionComponent',
@@ -77,7 +91,8 @@ export default defineComponent({
       getGradientColor,
       visible,
       onIntersection,
-      visibleClass: computed(() => visible.value ? 'focus-in-contract' : 'invisible')
+      visibleClass: computed(() => visible.value ? 'focus-in-contract' : 'invisible'),
+      shiftColor
     };
   },
 });

@@ -2,7 +2,6 @@ export interface Section {
   id: number;
   name: string;
   active: boolean;
-  year: string;
   content: Content;
   images: string[];
   bg: BgStyles;
@@ -11,6 +10,7 @@ export interface Section {
 export interface Content {
   title: string;
   stack: string;
+  year: string;
   description: string;
   github: string;
   deploy?: string;

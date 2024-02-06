@@ -12,8 +12,6 @@ export function shiftColor(color: string, multiply: number): string {
   const green = normalize(countColor(color.slice(3, 5)).toString(16));
   const blue = normalize(countColor(color.slice(5)).toString(16));
 
-  console.log('result', `#${red}${green}${blue}`);
-
   return `#${red}${green}${blue}`;
 }
 

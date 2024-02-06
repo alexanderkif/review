@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="324" height="324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="f">
+  <g id="g">
+   <g id="h">
+    <g id="i">
+     <g id="j">
+      <g id="k">
+       <use id="e" transform="translate(4)" xlink:href="#m"/>
+       <g id="l">
+        <g id="m">
+         <path id="d" d="m0 162h4" stroke="#000"/>
+         <use transform="rotate(-90,2,162)" xlink:href="#d"/>
+        </g>
+        <use transform="translate(0,-4)" xlink:href="#e"/>
+       </g>
+       <use transform="translate(4,4)" xlink:href="#l"/>
+      </g>
+      <use id="c" transform="translate(12,-12)" xlink:href="#k"/>
+     </g>
+     <use transform="translate(0,12)" xlink:href="#c"/>
+     <use transform="translate(12,12)" xlink:href="#j"/>
+    </g>
+    <use id="b" transform="translate(36,-36)" xlink:href="#i"/>
+   </g>
+   <use transform="translate(0,36)" xlink:href="#b"/>
+   <use transform="translate(36,36)" xlink:href="#h"/>
+  </g>
+  <use id="a" transform="translate(108,-108)" xlink:href="#g"/>
+ </g>
+ <use transform="translate(0,108)" xlink:href="#a"/>
+ <use transform="translate(108,108)" xlink:href="#f"/>
+</svg>

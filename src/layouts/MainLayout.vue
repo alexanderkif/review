@@ -14,7 +14,7 @@
         @click="toggleLeftDrawer" color="grey-10" />
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" :side="drawerRight ? 'right' : 'left'" bordered>
+    <q-drawer v-model="drawerOpen" :side="drawerRight ? 'right' : 'left'" bordered>
       <q-checkbox v-model="drawerRight" :label="`Menu to the ${drawerRight ? 'right' : 'left'}`"
         checked-icon="switch_right" unchecked-icon="switch_left" color="green" keep-color />
       {{ isMobile }}
@@ -85,7 +85,7 @@ export default defineComponent({
   },
 
   setup() {
-    const leftDrawerOpen = ref(false)
+    const drawerOpen = ref(false)
     const drawerRight = ref(false)
     const $q = useQuasar()
     const isMobile = computed(() => $q.platform.is.mobile);
@@ -93,10 +93,10 @@ export default defineComponent({
     return {
       essentialLinks: linksList,
       drawerRight,
-      leftDrawerOpen,
+      drawerOpen,
       isMobile,
       toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value
+        drawerOpen.value = !drawerOpen.value
       }
     }
   }

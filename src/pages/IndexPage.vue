@@ -29,7 +29,7 @@ export default defineComponent({
 
 <style lang="scss">
 .sections {
-  height: 100vh;
+  height: 100dvh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   /* IE and Edge */

@@ -6,7 +6,7 @@ const sections: Section[] = [
     name: 'REACT-MOVIES',
     active: true,
     content: {
-      title: 'NetflixRoulette',
+      title: 'Netflix Roulette',
       stack:
         'React, Redux, Router, Thunk, Enzyme, Testing-library/react, hooks',
       year: '2021',
@@ -24,10 +24,10 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
-        { color: '#E45E65', percent: 100 },
+        { color: '#FBF2F2', percent: 0 },
+        { color: '#E29598', percent: 100 },
       ],
-      wave: { color1: '#E45E65', color2: '#FFFFFF' },
+      wave: { color1: '#E29598', color2: '#FBF2F2' },
     },
   },
   {
@@ -52,10 +52,10 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
+        { color: '#FBF8FC', percent: 0 },
         { color: '#DBBFE4', percent: 100 },
       ],
-      wave: { color1: '#DBBFE4', color2: '#FFFFFF' },
+      wave: { color1: '#DBBFE4', color2: '#FBF8FC' },
     },
   },
   {
@@ -80,10 +80,10 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
+        { color: '#EEF4FB', percent: 0 },
         { color: '#428EDE', percent: 100 },
       ],
-      wave: { color1: '#428EDE', color2: '#FFFFFF' },
+      wave: { color1: '#428EDE', color2: '#EEF4FB' },
     },
   },
   {
@@ -108,10 +108,11 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
+        { color: '#FCFFF7', percent: 0 },
         { color: '#E1FFB0', percent: 100 },
       ],
-      image: 'fractal_star.svg',
+      wave: { color1: '#E1FFB0', color2: '#FCFFF7' },
+      // image: 'fractal_star.svg',
     },
   },
   {
@@ -136,11 +137,11 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
+        { color: '#E9EEF8', percent: 0 },
         { color: '#3874CB', percent: 50 },
         { color: '#D5D5D5', percent: 100 },
       ],
-      wave: { color1: '#3874CB', color2: '#FFFFFF' },
+      wave: { color1: '#3874CB', color2: '#E9EEF8' },
     },
   },
   {
@@ -159,10 +160,10 @@ const sections: Section[] = [
     images: ['simon1.png', 'simon2.png'],
     bg: {
       gradient: [
-        { color: '#FFFF54', percent: 0 },
-        { color: '#A4CB9D', percent: 30 },
-        { color: '#F19E9C', percent: 70 },
-        { color: '#9999F8', percent: 100 },
+        { color: '#DBEDD4', percent: 0 },
+        { color: '#9999F8', percent: 30 },
+        { color: '#F19E9C', percent: 60 },
+        { color: '#FFFF54', percent: 100 },
       ],
       wave: { color1: '#A4CB9D', color2: '#FFFF54' },
     },
@@ -184,9 +185,9 @@ const sections: Section[] = [
     bg: {
       gradient: [
         { color: '#F5F5F5', percent: 0 },
-        { color: '#555555', percent: 100 },
+        { color: '#888888', percent: 100 },
       ],
-      wave: { color1: '#555555', color2: '#F5F5F5' },
+      wave: { color1: '#888888', color2: '#F5F5F5' },
     },
   },
   {
@@ -213,11 +214,11 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FCF086', percent: 0 },
+        { color: '#FFFBD7', percent: 0 },
         { color: '#F5BD63', percent: 70 },
-        { color: '#B9722F', percent: 100 },
+        { color: '#FCF086', percent: 100 },
       ],
-      wave: { color1: '#F5BD63', color2: '#FCF086' },
+      wave: { color1: '#F5BD63', color2: '#FFFBD7' },
     },
   },
   {
@@ -235,8 +236,9 @@ const sections: Section[] = [
     images: ['light_menu.png', 'light_popup.png', 'light_select.png'],
     bg: {
       gradient: [
-        { color: '#F5D7D7', percent: 0 },
-        { color: '#BDE4F8', percent: 100 },
+        { color: '#fafafa', percent: 0 },
+        { color: '#BDE4F8', percent: 50 },
+        { color: '#F5D7D7', percent: 100 },
       ],
       wave: { color1: '#BDE4F8', color2: '#F5D7D7' },
     },
@@ -258,9 +260,9 @@ const sections: Section[] = [
     bg: {
       gradient: [
         { color: '#D1EBC3', percent: 0 },
-        { color: '#67AD5B', percent: 100 },
+        { color: '#A2C78F', percent: 100 },
       ],
-      wave: { color1: '#67AD5B', color2: '#D1EBC3' },
+      wave: { color1: '#A2C78F', color2: '#D1EBC3' },
     },
   },
   {
@@ -279,10 +281,10 @@ const sections: Section[] = [
     images: ['football.png'],
     bg: {
       gradient: [
-        { color: '#B12422', percent: 0 },
-        { color: '#EAC254', percent: 100 },
+        { color: '#FFEDC2', percent: 0 },
+        { color: '#C5FFC0', percent: 100 },
       ],
-      wave: { color1: '#EAC254', color2: '#B12422' },
+      wave: { color1: '#C5FFC0', color2: '#FFEDC2' },
     },
   },
   {
@@ -301,10 +303,10 @@ const sections: Section[] = [
     images: ['meteo1-min.png', 'meteo2-min.png', 'meteo3-min.png'],
     bg: {
       gradient: [
-        { color: '#D43E36', percent: 0 },
-        { color: '#2F2FEE', percent: 100 },
+        { color: '#FFD5CE', percent: 0 },
+        { color: '#969CFF', percent: 100 },
       ],
-      wave: { color1: '#2F2FEE', color2: '#D43E36' },
+      wave: { color1: '#969CFF', color2: '#FFD5CE' },
     },
   },
   {
@@ -346,10 +348,10 @@ const sections: Section[] = [
     images: ['st1-min.png', 'st2-min.png', 'st3-min.png'],
     bg: {
       gradient: [
-        { color: '#9DE89A', percent: 0 },
+        { color: '#E2F9E2', percent: 0 },
         { color: '#4FA442', percent: 100 },
       ],
-      wave: { color1: '#4FA442', color2: '#9DE89A' },
+      wave: { color1: '#4FA442', color2: '#E2F9E2' },
     },
   },
   {
@@ -368,11 +370,11 @@ const sections: Section[] = [
     images: ['slider1.png', 'slider2-min.png'],
     bg: {
       gradient: [
-        { color: '#C7DFE8', percent: 0 },
-        { color: '#D66141', percent: 100 },
+        { color: '#E1F5FF', percent: 0 },
+        { color: '#F0D769', percent: 100 },
         { color: '#FAE06D', percent: 100 },
       ],
-      wave: { color1: '#D66141', color2: '#FAE06D' },
+      wave: { color1: '#F0D769', color2: '#FAE06D' },
     },
   },
   {
@@ -390,8 +392,13 @@ const sections: Section[] = [
     },
     images: ['flatUI-min.png'],
     bg: {
-      color: '#E5E5E5',
-      wave: { color1: '#D66141', color2: '#6BB5A8' },
+      gradient: [
+        { color: '#fafafa', percent: 0 },
+        { color: '#D66141', percent: 30 },
+        { color: '#6BB5A8', percent: 40 },
+        { color: '#6BB5A8', percent: 100 },
+      ],
+      wave: { color1: '#D66141', color2: '#fafafa' },
     },
   },
   {
@@ -410,12 +417,12 @@ const sections: Section[] = [
     images: ['jstask-min.png'],
     bg: {
       gradient: [
-        { color: '#82E36C', percent: 0 },
-        { color: '#EACCF8', percent: 48 },
-        { color: '#6654F1', percent: 100 },
+        { color: '#75147C', percent: 0 },
+        { color: '#FFD88E', percent: 50 },
+        { color: '#75147C', percent: 100 },
       ],
-      wave: { color1: '#6654F1', color2: '#69EACB' },
-      image: 'box_fractal.svg',
+      wave: { color1: '#FFD88E', color2: '#75147C' },
+      // image: 'box_fractal.svg',
     },
   },
 ];

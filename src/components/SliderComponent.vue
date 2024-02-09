@@ -9,7 +9,8 @@
     <template v-slot:control>
       <q-carousel-control v-if="images.length > 1" position="top-right" :offset="[18, 18]">
         <q-btn push glossy rounded :style="`background: ${shiftColor(bgColor, 0.7)}; color: ${shiftColor(color, 1.2)};`"
-          @click="autoplay = !autoplay" :label="autoplay ? 'stop' : 'play'" />
+          @click="!autoplay && ($refs.carousel as any).next(); autoplay = !autoplay"
+          :label="autoplay ? 'stop' : 'play'" />
       </q-carousel-control>
 
       <q-carousel-control position="bottom-right" :offset="[18, 18]" class="q-gutter-xs">

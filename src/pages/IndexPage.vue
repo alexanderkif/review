@@ -1,22 +1,28 @@
 <template>
   <q-page class="sections">
-    <section-component v-for="section in activeSections" :key="section.id" :section="section"></section-component>
+    <section-component v-for="section in activeSections" ref="sections" :key="section.id"
+      :section="section"></section-component>
   </q-page>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import SectionComponent from 'components/SectionComponent.vue';
-import sections from './sections';
-
+import { computed, defineComponent, onMounted } from 'vue';
+import SectionComponent from 'src/components/SectionComponent.vue';
+import { useSectionsStore } from 'src/stores/sections-store';
 
 export default defineComponent({
   name: 'IndexPage',
   components: { SectionComponent },
   setup() {
-    const activeSections = sections.filter(section => section.active);
+    const sectionsStore = useSectionsStore();
+    const activeSections = computed(() => sectionsStore.getSections.filter(section => section.active));
+    const sections: InstanceType<typeof SectionComponent>[] = [];
 
-    return { activeSections };
+    onMounted(() => {
+      console.log('sections', sections[0].section.id, sections[0].name, sections[0].$el);
+    });
+
+    return { activeSections, sections };
   }
 });
 </script>

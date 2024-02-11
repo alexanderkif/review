@@ -1,7 +1,7 @@
 <template>
-  <div v-intersection="onSectionIntersection" class="section relative-position overflow-hidden" :style="getBgStyles(bg)">
+  <div v-intersection="onSectionIntersection" class="section relative-position overflow-hidden" :style="stylesBg">
     <div class="relative-position fit column">
-      <div v-if="visible && bg.image" class="section-image kenburns-top absolute overflow-hidden" :style="getBgImage(bg)">
+      <div v-if="visible && bg.image" class="section-image kenburns-top absolute overflow-hidden" :style="styleImageBg">
       </div>
       <div class="col-auto relative-position overflow-hidden">
         <svg v-if="visible && bg.wave" class="img-move absolute full-height" preserveAspectRatio="none" id="visual"
@@ -12,19 +12,18 @@
             :style="{ fill: bg.wave.color1, fillOpacity: 0.5 }" stroke-linecap="round" stroke-linejoin="miter">
           </path>
         </svg>
-        <div class="fit q-pa-md text-center text-no-wrap text-h3 text-uppercase" :class="visibleClass"
-          :style="`color: ${shiftColor(getGradientColor(bg, 1), 0.5)};`">
+        <div class="fit q-pa-md text-center text-no-wrap text-h3 text-uppercase" :class="visibleClass" :style="styleName">
           {{ name }}
         </div>
       </div>
       <div class="col items-stretch q-pa-md">
         <q-card class="fit no-wrap shadow-8 rounded-borders scroll" :class="isWide ? 'row' : 'column'"
-          :style="{ backgroundColor: getGradientColor(bg, 1) + '55' }">
+          :style="{ backgroundColor: gradientColor1 + '55' }">
           <div class="col" :class="{ 'col-sm-8': isWide }">
-            <SliderComponent :images="images" :color="getGradientColor(bg, 0)" :bgColor="getGradientColor(bg, 1)" />
+            <SliderComponent :images="images" :color="gradientColor0" :bgColor="gradientColor1" />
           </div>
           <div class="col-auto" :class="{ 'col-sm-4': isWide }">
-            <ContentComponent :content="content" :color="getGradientColor(bg, 0)" :bgColor="getGradientColor(bg, 1)" />
+            <ContentComponent :content="content" :color="gradientColor0" :bgColor="gradientColor1" />
           </div>
         </q-card>
       </div>
@@ -63,6 +62,11 @@ export default defineComponent({
     const visible = ref(false);
     const isWide = computed(() => $q.screen.gt.sm);
     const visibleClass = computed(() => visible.value ? 'focus-in-contract' : 'invisible');
+    const stylesBg = computed(() => getBgStyles(bg));
+    const styleImageBg = computed(() => getBgImage(bg));
+    const styleName = computed(() => ({ color: shiftColor(getGradientColor(bg, 1), 0.5) }));
+    const gradientColor0 = computed(() => getGradientColor(bg, 0));
+    const gradientColor1 = computed(() => getGradientColor(bg, 1));
 
     const onSectionIntersection = ref<IntersectionValue>({
       handler(entry: unknown): boolean {
@@ -90,13 +94,14 @@ export default defineComponent({
       images,
       bg,
       isWide,
-      getBgStyles,
-      getBgImage,
-      getGradientColor,
+      stylesBg,
+      styleName,
+      styleImageBg,
+      gradientColor0,
+      gradientColor1,
       visible,
       onSectionIntersection,
-      visibleClass,
-      shiftColor
+      visibleClass
     };
   },
 });

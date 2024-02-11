@@ -1,8 +1,8 @@
 <template>
-  <q-card class="fit scroll" :style="`background: ${shiftColor(color, 1)}; color: ${shiftColor(bgColor, 0.5)};`">
+  <q-card class="fit scroll" :style="styleCard">
     <div class="row">
-      <div class="title q-pt-md q-px-md col text-h6 text-bold text-uppercase"
-        :style="`color: ${shiftColor(bgColor, 0.7)};`">{{ content.title }}</div>
+      <div class="title q-pt-md q-px-md col text-h6 text-bold text-uppercase" :style="styleTitle">{{ content.title }}
+      </div>
       <div class="year q-pt-md q-px-md col-auto text-overline text-bold text-uppercase">{{ content.year }}</div>
     </div>
     <div class="stack q-px-md row text-subtitle2 text-italic text-weight-medium">
@@ -11,8 +11,7 @@
     <div class="description text-body2 q-px-md q-mt-md">{{ content.description }}</div>
     <q-separator class="q-mt-md" />
     <div class="links q-pa-md row q-gutter-md">
-      <q-btn glossy rounded :href="content.github" target="_blank"
-        :style="`background: ${shiftColor(bgColor, 0.7)}; color: ${shiftColor(color, 1)};`">
+      <q-btn glossy rounded :href="content.github" target="_blank" :style="styleButton">
         <q-icon left size="2em">
           <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
             <path
@@ -21,8 +20,7 @@
         </q-icon>
         <div>GitHub</div>
       </q-btn>
-      <q-btn v-if="content.deploy" glossy rounded :href="content.deploy" target="_blank"
-        :style="`background: ${shiftColor(bgColor, 0.7)}; color: ${shiftColor(color, 1)};`">
+      <q-btn v-if="content.deploy" glossy rounded :href="content.deploy" target="_blank" :style="styleButton">
         <q-icon left size="2em">
           <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
             <path fill-rule="evenodd" d="M256 48l240 416H16z" />
@@ -39,10 +37,7 @@ import { shiftColor } from 'src/utils/utils';
 import {
   defineComponent,
   PropType,
-  computed,
-  ref,
-  toRef,
-  Ref,
+  computed
 } from 'vue';
 import { Content } from './models';
 
@@ -61,40 +56,24 @@ export default defineComponent({
       type: String,
       required: true
     }
-    // title: {
-    //   type: String,
-    //   required: true
-    // },
-    // stack: {
-    //   type: String,
-    //   required: true
-    // },
-    // description: {
-    //   type: String
-    // },
-    // github: {
-    //   type: String,
-    //   required: true
-    // },
-    // deploy: {
-    //   type: String
-    // }
   },
   setup(props) {
-    console.log('props', props);
-    // const visible = ref(false);
-    // const onIntersection = ref<IntersectionValue>({
-    //   handler(entry: unknown): boolean {
-    //     visible.value = (entry as IntersectionObserverEntry).isIntersecting ?? false;
-    //     return true;
-    //   },
-    //   cfg: {
-    //     threshold: [0.3]
-    //   }
-    // })
+    const styleCard = computed(() => ([
+      { background: shiftColor(props.color, 1) },
+      { color: shiftColor(props.bgColor, 0.5) }
+    ]));
+    const styleTitle = computed(() => ([
+      { color: shiftColor(props.bgColor, 0.7) }
+    ]));
+    const styleButton = computed(() => ([
+      { background: shiftColor(props.bgColor, 0.7) },
+      { color: shiftColor(props.color, 1) }
+    ]));
 
     return {
-      shiftColor
+      styleCard,
+      styleTitle,
+      styleButton
     };
   },
 });

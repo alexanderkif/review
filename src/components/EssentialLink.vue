@@ -1,48 +1,53 @@
 <template>
-  <q-item
-    clickable
-    tag="a"
-    target="_blank"
-    :href="link"
-  >
-    <q-item-section
-      v-if="icon"
-      avatar
-    >
-      <q-icon :name="icon" />
-    </q-item-section>
-
+  <q-item clickable @click="scrollToElement(id)">
     <q-item-section>
-      <q-item-label>{{ title }}</q-item-label>
-      <q-item-label caption>{{ caption }}</q-item-label>
+      <q-item-label class="text-weight-medium" :style="styleTitle">{{ name }}</q-item-label>
+      <q-item-label caption :style="styleCaption">{{ title }}</q-item-label>
     </q-item-section>
   </q-item>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { getGradientColor, shiftColor } from 'src/utils/utils';
+import { PropType, computed, defineComponent } from 'vue';
+import { BgStyles } from './models';
 
 export default defineComponent({
   name: 'EssentialLink',
   props: {
+    id: {
+      type: Number,
+      required: true
+    },
     title: {
       type: String,
       required: true
     },
-
-    caption: {
+    name: {
       type: String,
       default: ''
     },
-
-    link: {
-      type: String,
-      default: '#'
+    bg: {
+      type: Object as PropType<BgStyles>,
+      required: true
     },
+    scrollToElement: {
+      type: Function,
+      required: true
+    }
+  },
+  setup(props) {
+    const gradientColor1 = computed(() => getGradientColor(props.bg, 1));
+    const styleTitle = computed(() => ([
+      { color: shiftColor(gradientColor1.value, 0.7) }
+    ]));
+    const styleCaption = computed(() => ([
+      { color: shiftColor(gradientColor1.value, 0.7) }
+    ]));
 
-    icon: {
-      type: String,
-      default: ''
+    return {
+      styleTitle,
+      styleCaption
     }
   }
 });

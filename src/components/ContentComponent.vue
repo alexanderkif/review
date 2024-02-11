@@ -11,7 +11,7 @@
     <div class="description text-body2 q-px-md q-mt-md">{{ content.description }}</div>
     <q-separator class="q-mt-md" />
     <div class="links q-pa-md row q-gutter-md">
-      <q-btn glossy rounded :href="content.github" target="_blank" :style="styleButton">
+      <q-btn v-if="content.github" glossy rounded :href="content.github" target="_blank" :style="styleButton">
         <q-icon left size="2em">
           <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
             <path

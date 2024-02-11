@@ -2,6 +2,120 @@ import { Section } from 'src/components/models';
 
 const sections: Section[] = [
   {
+    id: 21,
+    name: 'Review',
+    active: true,
+    content: {
+      title: 'My GitHub review',
+      stack: 'JavaScript PWA',
+      year: '2024',
+      description: 'This application.',
+      github: 'https://github.com/alexanderkif/review',
+      deploy: 'https://review-alexanderkif.vercel.app',
+    },
+    images: ['review1.png'],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#59B755', percent: 25 },
+        { color: '#FFFFFF', percent: 38 },
+        { color: '#EC6337', percent: 50 },
+        { color: '#FFFFFF', percent: 62 },
+        { color: '#59B755', percent: 75 },
+        { color: '#FFFFFF', percent: 87 },
+        { color: '#EC6337', percent: 100 },
+      ],
+      wave: { color1: '#EC6337', color2: '#3f51b1' },
+    },
+  },
+  {
+    id: 20,
+    name: 'Alesia',
+    active: true,
+    content: {
+      title: 'Alesia Game',
+      stack: 'JavaScript PWA',
+      year: '2022',
+      description:
+        'I wrote this simple game with my daughter to teach and explain to her how the browser and JavaScript work.',
+      github: 'https://github.com/alexanderkif/alesiagame',
+      deploy: 'https://alesiagame.vercel.app',
+    },
+    images: ['alesiagame1.png', 'alesiagame2.png'],
+    bg: {
+      gradient: [
+        { color: '#F2FDC7', percent: 0 },
+        { color: '#4C6A5B', percent: 100 },
+      ],
+      wave: { color1: '#4C6A5B', color2: '#F2FDC7' },
+    },
+  },
+  {
+    id: 19,
+    name: 'Spinme',
+    active: true,
+    content: {
+      title: 'Spin me Game',
+      stack: 'Vue.js / Quasar framework, Pinia store',
+      year: '2022',
+      description:
+        'The goal of the Spin Me Game is to place all the pieces on the plane by spinning them around its axis. If the space under the square is occupied, it is highlighted.',
+      github: '',
+      deploy: 'https://www.spinmegame.com',
+    },
+    images: [
+      'spinmegame1.png',
+      'spinmegame2.png',
+      'spinmegame3.png',
+      'spinmegame4.png',
+      'spinmegame5.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#555555', percent: 50 },
+        { color: '#59B755', percent: 60 },
+        { color: '#EC6337', percent: 100 },
+      ],
+      wave: { color1: '#EC6337', color2: '#59B755' },
+    },
+  },
+  {
+    id: 18,
+    name: 'Wallets',
+    active: true,
+    content: {
+      title: 'Wallets',
+      stack: 'Vue.js / Quasar framework',
+      year: '2022',
+      description:
+        "I have created a small application that can help you keep track of money. The application can be installed on the device as native. It stores all data directly in your browser's storage and can work without an Internet connection.",
+      github: 'https://github.com/alexanderkif/walletPWA',
+      deploy: 'https://alexanderkif.github.io/walletPWA',
+    },
+    images: [
+      'wallets1.png',
+      'wallets2.png',
+      'wallets3.png',
+      'wallets4.png',
+      'wallets5.png',
+      'wallets6.png',
+      'wallets7.png',
+      'wallets8.png',
+      'wallets9.png',
+      'wallets10.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#E4FEE1', percent: 0 },
+        { color: '#DDDDDD', percent: 40 },
+        { color: '#FADFDF', percent: 80 },
+        { color: '#FADFDF', percent: 100 },
+      ],
+      wave: { color1: '#FADFDF', color2: '#E4FEE1' },
+    },
+  },
+  {
     id: 17,
     name: 'REACT-MOVIES',
     active: true,

@@ -103,6 +103,7 @@ export default defineComponent({
       const sectionsEls = document.querySelectorAll('.section') as unknown as HTMLElement[];
       const el = [...sectionsEls].find(el => (+(el.getAttribute('id') || 0) === id)) || sectionsEls[0];
       el.scrollIntoView({ behavior: 'smooth' });
+      drawerOpen.value = false;
     };
 
     onMounted(() => {

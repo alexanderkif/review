@@ -1,7 +1,7 @@
 <template>
   <q-item clickable @click="scrollToElement(id)">
     <q-item-section>
-      <q-item-label class="text-weight-medium" :style="styleTitle">{{ name }}</q-item-label>
+      <q-item-label class="text-uppercase text-weight-medium" :style="styleTitle">{{ name }}</q-item-label>
       <q-item-label caption :style="styleCaption">{{ title }}</q-item-label>
     </q-item-section>
   </q-item>

@@ -9,7 +9,8 @@ const sections: Section[] = [
       title: 'My GitHub review',
       stack: 'JavaScript PWA',
       year: '2024',
-      description: 'This application.',
+      description:
+        'This application. This is an overview of test and training projects on my Github. There are no production applications here. For obvious reasons, I cannot post production code here. Each item in the list has screenshots, a description, a stack, the year of creation and links to Github and deployment.',
       github: 'https://github.com/alexanderkif/review',
       deploy: 'https://review-alexanderkif.vercel.app',
     },
@@ -125,7 +126,7 @@ const sections: Section[] = [
         'React, Redux, Router, Thunk, Enzyme, Testing-library/react, hooks',
       year: '2021',
       description:
-        'Localhost api is fully functional. Vercel use remote api with no edit, add and delete movies. Follow the link.',
+        'This application is a React training course challenge. The Localhost API must be fully functional. Vercel uses a remote API that no longer works. Follow the link.',
       github: 'https://github.com/alexanderkif/react-movies',
       deploy: 'https://react-movies-kappa.vercel.app/',
     },
@@ -153,7 +154,7 @@ const sections: Section[] = [
       stack: 'Vue.js / Quasar framework',
       year: '2021',
       description:
-        'Student coursework. Description in README. Follow the link. Upload example xlsx file. Use it with program. And wait for counting the tables...',
+        'Logistics task. The description is in the README file on Github. Follow the link below. To test, download a sample xlsx file. Then paste it into the appropriate field in the program. And then wait for the tables to be counted.',
       github: 'https://github.com/alexanderkif/logist',
       deploy: 'https://alexanderkif.github.io/logist',
     },
@@ -238,7 +239,7 @@ const sections: Section[] = [
       stack: 'Vue.js / Quasar framework',
       year: '2020',
       description:
-        'Test task for TakeoffStaff. Description in Readme file on GitHub.',
+        "Test task for TakeoffStaff. Description in Readme file on GitHub. I've tried Babylon JS here later.",
       github: 'https://github.com/alexanderkif/takeoffstaff',
       deploy: 'https://alexanderkif.github.io/takeoffstaff',
     },
@@ -248,6 +249,7 @@ const sections: Section[] = [
       'takeoff3.png',
       'takeoff4.png',
       'takeoff5.png',
+      'takeoff6.png',
     ],
     bg: {
       gradient: [
@@ -313,7 +315,7 @@ const sections: Section[] = [
       stack: 'Vercel serverless, Node.js, MongoDB, Vue/Quasar',
       year: '2020',
       description:
-        'Several users can fill out one shopping list. The shopping list is stored in the Mongodb database. Vercel serverless api gets access to the database. To try it register/login and add the groups with ids: 5f152ec3ea3c4800083d7de6 and 5f13f49eca7ee00007801c84. Or use the next credentials for demo access: Saha2 - s222.',
+        'Several users can fill out one shopping list. The shopping list is stored in the Mongodb database. Vercel serverless api gets access to the database. To try it register/login and add the groups with ids: 5f152ec3ea3c4800083d7de6 and 5f13f49eca7ee00007801c84. Or use the next credentials for demo access user: Saha2 password: s222',
       github: 'https://github.com/alexanderkif/todogroup',
       deploy: 'https://buyforme.vercel.app',
     },
@@ -343,7 +345,8 @@ const sections: Section[] = [
       title: 'Test task for led light company',
       stack: 'HTML, CSS, JavaScript, Vue/Quasar',
       year: '2020',
-      description: 'Test task for led light company.',
+      description:
+        'Assignment to create a page layout for an LED lighting company.',
       github: 'https://github.com/alexanderkif/light',
       deploy: 'https://alexanderkif.github.io/light/#/color',
     },

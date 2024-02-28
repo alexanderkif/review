@@ -1,29 +1,29 @@
 <template>
   <q-layout view="LHR lpr lfr">
     <q-header class="bg-primary text-white">
-      <q-btn :class="drawerRight ? 'absolute-top-right' : 'absolute-top-left'" @click="toggleLeftDrawer"
+      <q-btn :class="isDrawerRight ? 'absolute-top-right' : 'absolute-top-left'" @click="toggleLeftDrawer"
         class="menu-button q-ma-md" push glossy round icon="menu" :style="stylesMenuButton" />
     </q-header>
 
-    <q-drawer v-model="drawerOpen" :side="drawerRight ? 'right' : 'left'" overlay class="menu-drawer column"
+    <q-drawer v-model="drawerOpen" :side="isDrawerRight ? 'right' : 'left'" overlay class="menu-drawer column"
       :style="stylesDrawer">
       <q-btn v-if="drawerOpen" @click="toggleLeftDrawer" class="menu-button q-mt-md absolute" push glossy round
-        :icon="drawerRight ? 'arrow_forward' : 'arrow_back'" :style="stylesMenuButtonOpened" />
-      <div class="row q-ma-sm col-auto" :class="drawerRight ? 'justify-end' : 'justify-strat'">
-        <q-btn flat rounded @click="drawerRight = !drawerRight" size="sm">
-          <div v-if="drawerRight" class="q-mr-md">Right menu</div>
-          <q-icon :name="drawerRight ? 'switch_right' : 'switch_left'" :style="stylesMenuIcon" />
-          <div v-if="!drawerRight" class="q-ml-md">Left menu</div>
+        :icon="isDrawerRight ? 'arrow_forward' : 'arrow_back'" :style="stylesMenuButtonOpened" />
+      <div class="row q-ma-sm col-auto" :class="isDrawerRight ? 'justify-end' : 'justify-strat'">
+        <q-btn flat rounded @click="sectionsStore.toggleDrawerRight" size="sm">
+          <div v-if="isDrawerRight" class="q-mr-md">Right menu</div>
+          <q-icon :name="isDrawerRight ? 'switch_right' : 'switch_left'" :style="stylesMenuIcon" />
+          <div v-if="!isDrawerRight" class="q-ml-md">Left menu</div>
         </q-btn>
         <q-btn flat rounded @click="toggleFullscreen" size="sm"
           :icon="isFullscreenActive ? 'fullscreen_exit' : 'fullscreen'" label="Fullscreen" />
       </div>
       <q-separator />
       <q-scroll-area :thumb-style="thumbStyle" :bar-style="barStyle" class="col"
-        :style="!drawerRight && { transform: 'scaleX(-1)' }">
+        :style="!isDrawerRight && { transform: 'scaleX(-1)' }">
         <EssentialLink v-for="section in sections" :key="section.id" :id="section.id" :name="section.name"
           :title="section.content.title" :bg="currentSection.bg" :scrollToElement="scrollToElement"
-          :style="!drawerRight && { transform: 'scaleX(-1)' }" />
+          :style="!isDrawerRight && { transform: 'scaleX(-1)' }" />
       </q-scroll-area>
     </q-drawer>
 
@@ -54,14 +54,14 @@ export default defineComponent({
     const isFullscreenActive = computed(() => $q.fullscreen.isActive);
     const sectionsStore = useSectionsStore();
     const currentSection = computed(() => sectionsStore.getCurrentSection);
+    const isDrawerRight = computed(() => sectionsStore.getIsDrawerRight);
     const sections = computed(() => sectionsStore.getSections);
     const drawerOpen = ref(false);
-    const drawerRight = ref(false);
     const gradientColor0 = computed(() => getGradientColor(currentSection.value.bg, 0));
     const gradientColor1 = computed(() => getGradientColor(currentSection.value.bg, 1));
     const stylesDrawer = computed(() => ([
       { background: gradientColor0.value },
-      `border-${drawerRight.value ? 'left' : 'right'}: 1px solid ${shiftColor(gradientColor1.value, 0.7)};`,
+      `border-${isDrawerRight.value ? 'left' : 'right'}: 1px solid ${shiftColor(gradientColor1.value, 0.7)};`,
       { color: shiftColor(gradientColor1.value, 0.7) }
     ]));
     const stylesMenuIcon = computed(() => ([
@@ -73,7 +73,7 @@ export default defineComponent({
       { transition: 'all 0.3s' }
     ]));
     const stylesMenuButtonOpened = computed(() => ([
-      drawerRight.value ? { left: '-1.5em' } : { right: '-1.5em' },
+      isDrawerRight.value ? { left: '-1.5em' } : { right: '-1.5em' },
       { top: 0 },
       { background: shiftColor(gradientColor1.value, 0.7) },
       { color: shiftColor(gradientColor0.value, 1.2) },
@@ -113,7 +113,7 @@ export default defineComponent({
     return {
       sectionsStore,
       sections,
-      drawerRight,
+      isDrawerRight,
       drawerOpen,
       isMobile,
       currentSection,

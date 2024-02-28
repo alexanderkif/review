@@ -3,7 +3,7 @@
     <div class="relative-position fit column">
       <div v-if="visible && bg.image" class="section-image kenburns-top absolute overflow-hidden" :style="styleImageBg">
       </div>
-      <div class="col-auto relative-position overflow-hidden">
+      <div class="full-width col-auto relative-position overflow-hidden">
         <svg v-if="visible && bg.wave" class="img-move absolute full-height" preserveAspectRatio="none" id="visual"
           viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -19,7 +19,7 @@
       <div class="col items-stretch q-pa-md">
         <q-card class="fit no-wrap shadow-8 rounded-borders scroll" :class="isWide ? 'row' : 'column'"
           :style="{ backgroundColor: gradientColor1 + '55' }">
-          <div class="col" :class="{ 'col-sm-8': isWide }">
+          <div class="slider col" :class="{ 'col-sm-8': isWide }">
             <SliderComponent :images="images" :color="gradientColor0" :bgColor="gradientColor1" />
           </div>
           <div class="col-auto" :class="{ 'col-sm-4': isWide }">
@@ -130,6 +130,10 @@ $imgTime: 30s;
     // height: 50vh;
     -webkit-animation: slide-right $imgTime ease-in-out infinite alternate both;
     animation: slide-right $imgTime ease-in-out infinite alternate both;
+  }
+
+  .slider {
+    min-height: 130px;
   }
 
   /**

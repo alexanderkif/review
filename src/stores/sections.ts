@@ -2,6 +2,38 @@ import { Section } from 'src/components/models';
 
 const sections: Section[] = [
   {
+    id: 22,
+    name: 'Cards',
+    active: true,
+    content: {
+      title: 'Cards for training memory',
+      stack: 'ReactJS PWA',
+      year: '2024',
+      description:
+        'Enhance your memory and learning with Cards, a flashcard app designed to optimize your learning experience. Whether you are mastering a new language, expanding your vocabulary, or delving into any subject, Cards empowers you to learn efficiently and effectively.',
+      github: '',
+      deploy: 'https://cards-pwa.vercel.app/',
+    },
+    images: [
+      'cards0.png',
+      'cards1.png',
+      'cards2.png',
+      'cards3.png',
+      'cards4.png',
+      'cards5.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#118822', percent: 1 },
+        { color: '#ddffff', percent: 7 },
+        { color: '#ddffdd', percent: 73 },
+        { color: '#ddffff', percent: 100 },
+      ],
+      wave: { color1: '#118822', color2: '#FFF888' },
+    },
+  },
+  {
     id: 21,
     name: 'Review',
     active: true,

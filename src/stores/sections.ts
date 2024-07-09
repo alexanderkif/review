@@ -24,10 +24,10 @@ const sections: Section[] = [
     ],
     bg: {
       gradient: [
-        { color: '#FFFFFF', percent: 0 },
+        { color: '#FFFFdd', percent: 0 },
         { color: '#118822', percent: 1 },
-        { color: '#ddffff', percent: 7 },
-        { color: '#ddffdd', percent: 73 },
+        { color: '#FFFFdd', percent: 13 },
+        { color: '#FFFFdd', percent: 73 },
         { color: '#ddffff', percent: 100 },
       ],
       wave: { color1: '#118822', color2: '#FFF888' },

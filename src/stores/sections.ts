@@ -9,8 +9,13 @@ const sections: Section[] = [
       title: 'Cards for training memory',
       stack: 'ReactJS PWA',
       year: '2024',
-      description:
-        'Enhance your memory and learning with Cards, a flashcard app designed to optimize your learning experience. Whether you are mastering a new language, expanding your vocabulary, or delving into any subject, Cards empowers you to learn efficiently and effectively.',
+      description: `🚀 Boost Your Memory and Learning with Cards! 📚✨
+\n🔹 Create Personalized Flashcards: Easily make groups of cards with terms, concepts, or any information you want to remember. Each card shows your chosen content on one side and its translation, definition, or examples on the other.
+\n🔹 Share Your Flashcards: Easily share your groups of flashcards with others, making collaborative learning a breeze.🚀
+\nStart your journey towards better memory and enhanced learning with Cards today!
+\n✨ I\'ve set up a Telegram group where everyone can share their flashcards! 📚 You can join the group directly from the top menu of the Cards app.
+\n🤖 Plus, I've created a Telegram bot to help keep things organized and ensure everyone follows the group rules.
+\n📋 I've also added some example messages with card files attached to help you get started. Can't wait to see you there! 🚀`,
       github: '',
       deploy: 'https://cards-pwa.vercel.app/',
     },

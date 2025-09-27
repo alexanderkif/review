@@ -478,8 +478,8 @@ const sections: Section[] = [
       title: 'Autonomous outdoor weather station Wi-Fi',
       stack: 'Arduino, NodeJS, MongoDB, MongoClient, JavaScript, Vue/Quasar',
       year: '2019',
-      description:
-        'The weather station is powered by a lithium battery, which is charged from the solar panel. Data is transmitted via Wi-Fi to the back-end Zeit.co and stored in Mongodb. Universal get request: / data? Start = START_DATE & finish = FINISH_DATE & tframe = TFRAME & step = STEP. The TFRAME can be month, day, hour, minute. A small frontend is written on the quasar. To view, click TO DEPLOY.',
+      description: `The weather station is powered by a lithium battery, which is charged from the solar panel. Data is transmitted via Wi-Fi to the back-end Zeit.co and stored in Mongodb. Universal get request: / data? Start = START_DATE & finish = FINISH_DATE & tframe = TFRAME & step = STEP. The TFRAME can be month, day, hour, minute. A small frontend is written on the quasar. To view, click TO DEPLOY.
+        \nThe last reading was on March 14, 2022, at 9:58 AM. I left my home at that time. If you want to see the graphs, select the period between July 1, 2019, and March 14, 2022.`,
       github: 'https://github.com/alexanderkif/meteo',
       deploy: 'https://alexanderkif.github.io/meteo-front',
     },
@@ -520,7 +520,8 @@ const sections: Section[] = [
     name: 'TRACKER',
     active: true,
     content: {
-      title: 'My son took first place at robot competition',
+      title:
+        'My son won first place at the robotics competition. I was awarded a project supervisor certificate.',
       stack: 'Quasar/vue, PWA',
       year: '2016',
       description:

@@ -15,7 +15,7 @@ export default defineComponent({
   components: { SectionComponent },
   setup() {
     const sectionsStore = useSectionsStore();
-    const activeSections = computed(() => sectionsStore.getSections.filter(section => section.active));
+    const activeSections = computed(() => sectionsStore.getSections);
 
     return { activeSections };
   }

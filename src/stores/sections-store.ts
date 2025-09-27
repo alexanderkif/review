@@ -16,7 +16,8 @@ export const useSectionsStore = defineStore('sections-store', {
     isDrawerRight: LocalStorage.getItem('isDrawerRight') || false,
   }),
   getters: {
-    getSections: (state): Section[] => state.sections,
+    getSections: (state): Section[] =>
+      state.sections.filter((section) => section.active),
     getCurrentSection: (state): Section =>
       state.sections.find((section) => section.id === state.currentSectionId) ||
       state.sections[0],

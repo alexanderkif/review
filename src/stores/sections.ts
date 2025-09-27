@@ -2,6 +2,56 @@ import { Section } from 'src/components/models';
 
 const sections: Section[] = [
   {
+    id: 24,
+    name: 'Piano',
+    active: true,
+    content: {
+      title: 'Piano PWA',
+      stack: 'JavaScript Progressive Web App',
+      year: '2025',
+      description:
+        'Vibe coding experimental piano app. Install it on your device. Use it without Internet. Play with your keyboard or mouse on the PC or touch on mobile. Enjoy the music!',
+      github: 'https://github.com/alexanderkif/piano/',
+      deploy: 'https://alexanderkif.github.io/piano/',
+    },
+    images: ['piano2.png', 'piano1.png'],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#999999', percent: 25 },
+        { color: '#FFFFFF', percent: 38 },
+        { color: '#333333', percent: 87 },
+        { color: '#999999', percent: 100 },
+      ],
+      wave: { color1: '#333333', color2: '#999999' },
+    },
+  },
+  {
+    id: 23,
+    name: 'Picture Puzzle',
+    active: true,
+    content: {
+      title: 'Sliding Picture Puzzle game',
+      stack: 'JavaScript Progressive Web App',
+      year: '2025',
+      description:
+        'Vibe coding experimental Sliding Picture Puzzle game. Install it on your device. Use it without Internet. Play with your keyboard or mouse on the PC or touch on mobile. Enjoy the game!',
+      github: 'https://github.com/alexanderkif/picture-puzzle/',
+      deploy: 'https://alexanderkif.github.io/picture-puzzle/',
+    },
+    images: ['picturePuzzle1.png', 'picturePuzzle2.png', 'picturePuzzle3.png'],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#b755af', percent: 25 },
+        { color: '#37b3ec', percent: 50 },
+        { color: '#b755af', percent: 75 },
+        { color: '#37b3ec', percent: 100 },
+      ],
+      wave: { color1: '#37b3ec', color2: '#b755af' },
+    },
+  },
+  {
     id: 22,
     name: 'Cards',
     active: true,
@@ -69,7 +119,7 @@ const sections: Section[] = [
   {
     id: 20,
     name: 'Alesia',
-    active: true,
+    active: false,
     content: {
       title: 'Alesia Game',
       stack: 'JavaScript PWA',
@@ -86,36 +136,6 @@ const sections: Section[] = [
         { color: '#4C6A5B', percent: 100 },
       ],
       wave: { color1: '#4C6A5B', color2: '#F2FDC7' },
-    },
-  },
-  {
-    id: 19,
-    name: 'Spinme',
-    active: true,
-    content: {
-      title: 'Spin me Game',
-      stack: 'Vue.js / Quasar framework, Pinia store',
-      year: '2022',
-      description:
-        'The goal of the Spin Me Game is to place all the pieces on the plane by spinning them around its axis. If the space under the square is occupied, it is highlighted.',
-      github: '',
-      deploy: 'https://www.spinmegame.com',
-    },
-    images: [
-      'spinmegame1.png',
-      'spinmegame2.png',
-      'spinmegame3.png',
-      'spinmegame4.png',
-      'spinmegame5.png',
-    ],
-    bg: {
-      gradient: [
-        { color: '#FFFFFF', percent: 0 },
-        { color: '#555555', percent: 50 },
-        { color: '#59B755', percent: 60 },
-        { color: '#EC6337', percent: 100 },
-      ],
-      wave: { color1: '#EC6337', color2: '#59B755' },
     },
   },
   {
@@ -154,6 +174,36 @@ const sections: Section[] = [
     },
   },
   {
+    id: 19,
+    name: 'Spinme',
+    active: true,
+    content: {
+      title: 'Spin me Game',
+      stack: 'Vue.js / Quasar framework, Pinia store',
+      year: '2022',
+      description:
+        'The goal of the Spin Me Game is to place all the pieces on the plane by spinning them around its axis. If the space under the square is occupied, it is highlighted.',
+      github: '',
+      deploy: 'https://www.spinmegame.com',
+    },
+    images: [
+      'spinmegame1.png',
+      'spinmegame2.png',
+      'spinmegame3.png',
+      'spinmegame4.png',
+      'spinmegame5.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#FFFFFF', percent: 0 },
+        { color: '#555555', percent: 50 },
+        { color: '#59B755', percent: 60 },
+        { color: '#EC6337', percent: 100 },
+      ],
+      wave: { color1: '#EC6337', color2: '#59B755' },
+    },
+  },
+  {
     id: 17,
     name: 'REACT-MOVIES',
     active: true,
@@ -180,34 +230,6 @@ const sections: Section[] = [
         { color: '#E29598', percent: 100 },
       ],
       wave: { color1: '#E29598', color2: '#FBF2F2' },
-    },
-  },
-  {
-    id: 16,
-    name: 'LOGIST',
-    active: true,
-    content: {
-      title: 'Logistic task',
-      stack: 'Vue.js / Quasar framework',
-      year: '2021',
-      description:
-        'Logistics task. The description is in the README file on Github. Follow the link below. To test, download a sample xlsx file. Then paste it into the appropriate field in the program. And then wait for the tables to be counted.',
-      github: 'https://github.com/alexanderkif/logist',
-      deploy: 'https://alexanderkif.github.io/logist',
-    },
-    images: [
-      'logist1.png',
-      'logist2.png',
-      'logist3.png',
-      'logist4.png',
-      'logist5.png',
-    ],
-    bg: {
-      gradient: [
-        { color: '#FBF8FC', percent: 0 },
-        { color: '#DBBFE4', percent: 100 },
-      ],
-      wave: { color1: '#DBBFE4', color2: '#FBF8FC' },
     },
   },
   {
@@ -239,9 +261,37 @@ const sections: Section[] = [
     },
   },
   {
+    id: 16,
+    name: 'LOGIST',
+    active: true,
+    content: {
+      title: 'Logistic task',
+      stack: 'Vue.js / Quasar framework',
+      year: '2021',
+      description:
+        'Logistics task. The description is in the README file on Github. Follow the link below. To test, download a sample xlsx file. Then paste it into the appropriate field in the program. And then wait for the tables to be counted.',
+      github: 'https://github.com/alexanderkif/logist',
+      deploy: 'https://alexanderkif.github.io/logist',
+    },
+    images: [
+      'logist1.png',
+      'logist2.png',
+      'logist3.png',
+      'logist4.png',
+      'logist5.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#FBF8FC', percent: 0 },
+        { color: '#DBBFE4', percent: 100 },
+      ],
+      wave: { color1: '#DBBFE4', color2: '#FBF8FC' },
+    },
+  },
+  {
     id: 14,
     name: 'SIBDEV1',
-    active: true,
+    active: false,
     content: {
       title: 'sibdev1',
       stack: 'Vue.js',
@@ -300,7 +350,7 @@ const sections: Section[] = [
   {
     id: 12,
     name: 'MEDODS-2',
-    active: true,
+    active: false,
     content: {
       title: 'Test task, part 2',
       stack: 'Vue.js',
@@ -324,7 +374,7 @@ const sections: Section[] = [
   {
     id: 11,
     name: 'MEDODS-1',
-    active: true,
+    active: false,
     content: {
       title: 'Test task, part 1',
       stack: 'Vue.js, Vuelidate, Sass',
@@ -375,29 +425,6 @@ const sections: Section[] = [
     },
   },
   {
-    id: 9,
-    name: 'LIGHT',
-    active: true,
-    content: {
-      title: 'Test task for led light company',
-      stack: 'HTML, CSS, JavaScript, Vue/Quasar',
-      year: '2020',
-      description:
-        'Assignment to create a page layout for an LED lighting company.',
-      github: 'https://github.com/alexanderkif/light',
-      deploy: 'https://alexanderkif.github.io/light/#/color',
-    },
-    images: ['light_menu.png', 'light_popup.png', 'light_select.png'],
-    bg: {
-      gradient: [
-        { color: '#fafafa', percent: 0 },
-        { color: '#BDE4F8', percent: 50 },
-        { color: '#F5D7D7', percent: 100 },
-      ],
-      wave: { color1: '#BDE4F8', color2: '#F5D7D7' },
-    },
-  },
-  {
     id: 8,
     name: 'DOMETEO',
     active: true,
@@ -422,7 +449,7 @@ const sections: Section[] = [
   {
     id: 7,
     name: 'FOOTBALL',
-    active: true,
+    active: false,
     content: {
       title: 'Football trainer page',
       stack: 'JavaScript, Vue',
@@ -448,7 +475,7 @@ const sections: Section[] = [
     name: 'METEO',
     active: true,
     content: {
-      title: 'Autonomous outdoor weather station with Wi-Fi',
+      title: 'Autonomous outdoor weather station Wi-Fi',
       stack: 'Arduino, NodeJS, MongoDB, MongoClient, JavaScript, Vue/Quasar',
       year: '2019',
       description:
@@ -468,7 +495,7 @@ const sections: Section[] = [
   {
     id: 5,
     name: 'FISHNBUY',
-    active: true,
+    active: false,
     content: {
       title: 'Training project FISHNBUY',
       stack:
@@ -513,7 +540,7 @@ const sections: Section[] = [
   {
     id: 3,
     name: 'SLIDER',
-    active: true,
+    active: false,
     content: {
       title: 'Modifiable slider',
       stack: 'Webpack, JS, Pug, SCSS, BEM',
@@ -536,7 +563,7 @@ const sections: Section[] = [
   {
     id: 2,
     name: 'FLAT UI',
-    active: true,
+    active: false,
     content: {
       title: 'Test task',
       stack: 'HTML, Pug, CSS, SCSS, BEM, Javascript, Webpack',
@@ -560,7 +587,7 @@ const sections: Section[] = [
   {
     id: 1,
     name: 'JS-TEST-TASK',
-    active: true,
+    active: false,
     content: {
       title: 'Javascript test task',
       stack: 'JavaScript, HTML, CSS',

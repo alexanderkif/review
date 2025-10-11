@@ -2,7 +2,7 @@
   <q-layout view="LHR lpr lfr">
     <q-header class="bg-primary text-white">
       <q-btn :class="isDrawerRight ? 'absolute-top-right' : 'absolute-top-left'" @click="toggleLeftDrawer"
-        class="menu-button q-ma-md" push glossy round icon="menu" :style="stylesMenuButton" />
+        class="menu-button q-ma-md" push glossy round icon="menu" :style="stylesMenuButton" aria-label="Menu button" />
     </q-header>
 
     <q-drawer v-model="drawerOpen" :side="isDrawerRight ? 'right' : 'left'" overlay class="menu-drawer column"
@@ -62,34 +62,34 @@ export default defineComponent({
     const stylesDrawer = computed(() => ([
       { background: gradientColor0.value },
       `border-${isDrawerRight.value ? 'left' : 'right'}: 1px solid ${shiftColor(gradientColor1.value, 0.7)};`,
-      { color: shiftColor(gradientColor1.value, 0.7) }
+      { color: shiftColor(gradientColor1.value, 0.6) }
     ]));
     const stylesMenuIcon = computed(() => ([
-      { color: shiftColor(gradientColor1.value, 0.7) }
+      { color: shiftColor(gradientColor1.value, 0.6) }
     ]));
     const stylesMenuButton = computed(() => ([
-      { background: shiftColor(gradientColor1.value, 0.7) },
+      { background: shiftColor(gradientColor1.value, 0.6) },
       { color: shiftColor(gradientColor0.value, 1.2) },
       { transition: 'all 0.3s' }
     ]));
     const stylesMenuButtonOpened = computed(() => ([
       isDrawerRight.value ? { left: '-1.5em' } : { right: '-1.5em' },
       { top: 0 },
-      { background: shiftColor(gradientColor1.value, 0.7) },
+      { background: shiftColor(gradientColor1.value, 0.6) },
       { color: shiftColor(gradientColor0.value, 1.2) },
       { transition: 'all 0.3s' }
     ]));
     const thumbStyle = computed(() => ({
       right: '4px',
       borderRadius: '5px',
-      backgroundColor: shiftColor(gradientColor1.value, 0.7),
+      backgroundColor: shiftColor(gradientColor1.value, 0.6),
       width: '5px',
       opacity: 0.75
     } as unknown as Partial<CSSStyleDeclaration>));
     const barStyle = computed(() => ({
       right: '2px',
       borderRadius: '9px',
-      backgroundColor: shiftColor(gradientColor1.value, 0.7),
+      backgroundColor: shiftColor(gradientColor1.value, 0.6),
       width: '9px',
       opacity: 0.2
     } as unknown as Partial<CSSStyleDeclaration>));

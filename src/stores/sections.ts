@@ -2,6 +2,38 @@ import { Section } from 'src/components/models';
 
 const sections: Section[] = [
   {
+    id: 25,
+    name: 'Angular-zoneless-template',
+    active: true,
+    content: {
+      title: 'Angular Zoneless Template',
+      stack:
+        'Angular 20 Zoneless, SSR, NGRX, Karma/Jasmine unit tests, Playwright e2e tests, Vercel deploy',
+      year: '2025',
+      description:
+        'This is a starter template for Angular 20 Zoneless applications with server-side rendering (SSR) using NGRX for state management. It includes Karma/Jasmine for unit testing (coverage 100%) and Playwright for end-to-end (e2e) testing. The template is designed to be deployed on Vercel, providing a robust foundation for building high-performance web applications with Angular.',
+      github: 'https://github.com/alexanderkif/angular-zoneless-template',
+      deploy: 'https://angular-zoneless-template.vercel.app/',
+    },
+    images: [
+      'angular-zoneless-1-min.png',
+      'angular-zoneless-2-min.png',
+      'angular-zoneless-3-min.png',
+      'angular-zoneless-4-min.png',
+      'angular-zoneless-5-min.png',
+    ],
+    bg: {
+      gradient: [
+        { color: '#f0f8ff', percent: 0 },
+        { color: '#87ceeb', percent: 20 },
+        { color: '#f0f8ff', percent: 40 },
+        { color: '#f0f8ff', percent: 60 },
+        { color: '#ffa07a', percent: 100 },
+      ],
+      wave: { color1: '#87ceeb', color2: '#f0f8ff' },
+    },
+  },
+  {
     id: 24,
     name: 'Piano',
     active: true,
@@ -14,7 +46,12 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/piano/',
       deploy: 'https://alexanderkif.github.io/piano/',
     },
-    images: ['piano2.png', 'piano1.png'],
+    images: [
+      'piano1-min.png',
+      'piano2-min.png',
+      'piano3-min.png',
+      'piano4-min.png',
+    ],
     bg: {
       gradient: [
         { color: '#FFFFFF', percent: 0 },
@@ -39,7 +76,11 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/picture-puzzle/',
       deploy: 'https://alexanderkif.github.io/picture-puzzle/',
     },
-    images: ['picturePuzzle1.png', 'picturePuzzle2.png', 'picturePuzzle3.png'],
+    images: [
+      'picturePuzzle1-min.png',
+      'picturePuzzle2-min.png',
+      'picturePuzzle3-min.png',
+    ],
     bg: {
       gradient: [
         { color: '#FFFFFF', percent: 0 },
@@ -70,12 +111,12 @@ const sections: Section[] = [
       deploy: 'https://cards-pwa.vercel.app/',
     },
     images: [
-      'cards0.png',
-      'cards1.png',
-      'cards2.png',
-      'cards3.png',
-      'cards4.png',
-      'cards5.png',
+      'cards0-min.png',
+      'cards1-min.png',
+      'cards2-min.png',
+      'cards3-min.png',
+      'cards4-min.png',
+      'cards5-min.png',
     ],
     bg: {
       gradient: [
@@ -91,7 +132,7 @@ const sections: Section[] = [
   {
     id: 21,
     name: 'Review',
-    active: true,
+    active: false,
     content: {
       title: 'My GitHub review',
       stack: 'JavaScript PWA',
@@ -101,7 +142,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/review',
       deploy: 'https://review-alexanderkif.vercel.app',
     },
-    images: ['review1.png'],
+    images: ['review1-min.png'],
     bg: {
       gradient: [
         { color: '#FFFFFF', percent: 0 },
@@ -129,7 +170,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/alesiagame',
       deploy: 'https://alesiagame.vercel.app',
     },
-    images: ['alesiagame1.png', 'alesiagame2.png'],
+    images: ['alesiagame1-min.png', 'alesiagame2-min.png'],
     bg: {
       gradient: [
         { color: '#F2FDC7', percent: 0 },
@@ -152,16 +193,16 @@ const sections: Section[] = [
       deploy: 'https://alexanderkif.github.io/walletPWA',
     },
     images: [
-      'wallets1.png',
-      'wallets2.png',
-      'wallets3.png',
-      'wallets4.png',
-      'wallets5.png',
-      'wallets6.png',
-      'wallets7.png',
-      'wallets8.png',
-      'wallets9.png',
-      'wallets10.png',
+      'wallets1-min.png',
+      'wallets2-min.png',
+      'wallets3-min.png',
+      'wallets4-min.png',
+      'wallets5-min.png',
+      'wallets6-min.png',
+      'wallets7-min.png',
+      'wallets8-min.png',
+      'wallets9-min.png',
+      'wallets10-min.png',
     ],
     bg: {
       gradient: [
@@ -187,11 +228,11 @@ const sections: Section[] = [
       deploy: 'https://www.spinmegame.com',
     },
     images: [
-      'spinmegame1.png',
-      'spinmegame2.png',
-      'spinmegame3.png',
-      'spinmegame4.png',
-      'spinmegame5.png',
+      'spinmegame1-min.png',
+      'spinmegame2-min.png',
+      'spinmegame3-min.png',
+      'spinmegame4-min.png',
+      'spinmegame5-min.png',
     ],
     bg: {
       gradient: [
@@ -218,11 +259,11 @@ const sections: Section[] = [
       deploy: 'https://react-movies-kappa.vercel.app/',
     },
     images: [
-      'react-movie_1.png',
-      'react-movie_2.png',
-      'react-movie_3.png',
-      'react-movie_4.png',
-      'react-movie_5.png',
+      'react-movie_1-min.png',
+      'react-movie_2-min.png',
+      'react-movie_3-min.png',
+      'react-movie_4-min.png',
+      'react-movie_5-min.png',
     ],
     bg: {
       gradient: [
@@ -246,11 +287,11 @@ const sections: Section[] = [
       deploy: 'https://alexanderkif.github.io/sibdev2/',
     },
     images: [
-      'sibdev2_1.png',
-      'sibdev2_2.png',
-      'sibdev2_3.png',
-      'sibdev2_4.png',
-      'sibdev2_5.png',
+      'sibdev2_1-min.png',
+      'sibdev2_2-min.png',
+      'sibdev2_3-min.png',
+      'sibdev2_4-min.png',
+      'sibdev2_5-min.png',
     ],
     bg: {
       gradient: [
@@ -274,11 +315,11 @@ const sections: Section[] = [
       deploy: 'https://alexanderkif.github.io/logist',
     },
     images: [
-      'logist1.png',
-      'logist2.png',
-      'logist3.png',
-      'logist4.png',
-      'logist5.png',
+      'logist1-min.png',
+      'logist2-min.png',
+      'logist3-min.png',
+      'logist4-min.png',
+      'logist5-min.png',
     ],
     bg: {
       gradient: [
@@ -302,11 +343,11 @@ const sections: Section[] = [
       deploy: 'https://alexanderkif.github.io/sibdev1/',
     },
     images: [
-      'sibdev1_1.png',
-      'sibdev1_2.png',
-      'sibdev1_3.png',
-      'sibdev1_4.png',
-      'sibdev1_5.png',
+      'sibdev1_1-min.png',
+      'sibdev1_2-min.png',
+      'sibdev1_3-min.png',
+      'sibdev1_4-min.png',
+      'sibdev1_5-min.png',
     ],
     bg: {
       gradient: [
@@ -331,12 +372,12 @@ const sections: Section[] = [
       deploy: 'https://alexanderkif.github.io/takeoffstaff',
     },
     images: [
-      'takeoff1.png',
-      'takeoff2.png',
-      'takeoff3.png',
-      'takeoff4.png',
-      'takeoff5.png',
-      'takeoff6.png',
+      'takeoff1-min.png',
+      'takeoff2-min.png',
+      'takeoff3-min.png',
+      'takeoff4-min.png',
+      'takeoff5-min.png',
+      'takeoff6-min.png',
     ],
     bg: {
       gradient: [
@@ -360,7 +401,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/medods2',
       deploy: 'https://alexanderkif.github.io/medods2',
     },
-    images: ['simon1.png', 'simon2.png'],
+    images: ['simon1-min.png', 'simon2-min.png'],
     bg: {
       gradient: [
         { color: '#DBEDD4', percent: 0 },
@@ -384,7 +425,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/medods1',
       deploy: 'https://alexanderkif.github.io/medods1',
     },
-    images: ['customer1.png', 'customer2.png'],
+    images: ['customer1-min.png', 'customer2-min.png'],
     bg: {
       gradient: [
         { color: '#F5F5F5', percent: 0 },
@@ -407,13 +448,13 @@ const sections: Section[] = [
       deploy: 'https://buyforme.vercel.app',
     },
     images: [
-      'buyforme_login.png',
-      'buyforme_fab.png',
-      'buyforme_items.png',
-      'buyforme_fab.png',
-      'buyforme_detail.png',
-      'buyforme_groups.png',
-      'buyforme_red-blue.png',
+      'buyforme_login-min.png',
+      'buyforme_fab-min.png',
+      'buyforme_items-min.png',
+      'buyforme_fab-min.png',
+      'buyforme_detail-min.png',
+      'buyforme_groups-min.png',
+      'buyforme_red-blue-min.png',
     ],
     bg: {
       gradient: [
@@ -437,7 +478,12 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/dometeo',
       deploy: 'https://alexanderkif.github.io/dometeo',
     },
-    images: ['dometeo1.png', 'dometeo2.png', 'dometeo3.png', 'dometeo4.png'],
+    images: [
+      'dometeo1-min.png',
+      'dometeo2-min.png',
+      'dometeo3-min.png',
+      'dometeo4-min.png',
+    ],
     bg: {
       gradient: [
         { color: '#D1EBC3', percent: 0 },
@@ -459,7 +505,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/football',
       deploy: 'https://alexanderkif.github.io/football',
     },
-    images: ['football.png'],
+    images: ['football-min.png'],
     bg: {
       gradient: [
         { color: '#FFEDC2', percent: 0 },
@@ -483,7 +529,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/meteo',
       deploy: 'https://alexanderkif.github.io/meteo-front',
     },
-    images: ['meteo1-min.png', 'meteo2-min.png', 'meteo3-min.png'],
+    images: ['meteo1-min-min.png', 'meteo2-min-min.png', 'meteo3-min-min.png'],
     bg: {
       gradient: [
         { color: '#FFD5CE', percent: 0 },
@@ -506,7 +552,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/fishandbuy',
       deploy: 'https://fishandbuy.herokuapp.com',
     },
-    images: ['fnb1-min.png', 'fnb2-min.png', 'fnb3-min.png'],
+    images: ['fnb1-min-min.png', 'fnb2-min-min.png', 'fnb3-min-min.png'],
     bg: {
       gradient: [
         { color: '#F8FAE8', percent: 0 },
@@ -529,7 +575,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/solarTracker',
       deploy: 'https://alexanderkif.github.io/solarTracker/',
     },
-    images: ['st1-min.png', 'st2-min.png', 'st3-min.png'],
+    images: ['st1-min-min.png', 'st2-min-min.png', 'st3-min-min.png'],
     bg: {
       gradient: [
         { color: '#E2F9E2', percent: 0 },
@@ -551,7 +597,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/modifiable-slider',
       deploy: 'https://alexanderkif.github.io/modifiable-slider/',
     },
-    images: ['slider1.png', 'slider2-min.png'],
+    images: ['slider1-min.png', 'slider2-min-min.png'],
     bg: {
       gradient: [
         { color: '#E1F5FF', percent: 0 },
@@ -574,7 +620,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/flatUI',
       deploy: 'https://alexanderkif.github.io/flatUI',
     },
-    images: ['flatUI-min.png'],
+    images: ['flatUI-min-min.png'],
     bg: {
       gradient: [
         { color: '#fafafa', percent: 0 },
@@ -598,7 +644,7 @@ const sections: Section[] = [
       github: 'https://github.com/alexanderkif/js-test-task',
       deploy: 'https://alexanderkif.github.io/js-test-task',
     },
-    images: ['jstask-min.png'],
+    images: ['jstask-min-min.png'],
     bg: {
       gradient: [
         { color: '#75147C', percent: 0 },

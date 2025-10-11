@@ -9,17 +9,17 @@
     <template v-slot:control>
       <q-carousel-control v-if="images.length > 1" position="top-right" :offset="[18, 18]">
         <q-btn push glossy rounded :style="styleButton"
-          @click="!autoplay && ($refs.carousel as any).next(); autoplay = !autoplay"
-          :label="autoplay ? 'stop' : 'play'" />
+          @click="!autoplay && ($refs.carousel as any).next(); autoplay = !autoplay" :label="autoplay ? 'stop' : 'play'"
+          aria-label="Autoplay" />
       </q-carousel-control>
 
       <q-carousel-control position="bottom-right" :offset="[18, 18]" class="q-gutter-xs">
         <q-btn push round glossy :disabled="images.length < 2" :style="styleButton" icon="arrow_left"
-          @click="($refs.carousel as any).previous()" />
+          @click="($refs.carousel as any).previous()" aria-label="Previous" />
         <q-btn push round glossy :disabled="images.length < 2" :style="styleButton" icon="arrow_right"
-          @click="($refs.carousel as any).next()" />
+          @click="($refs.carousel as any).next()" aria-label="Next" />
         <q-btn push round glossy :style="styleButton" :icon="fullscreen ? 'fullscreen_exit' : 'fullscreen'"
-          @click="fullscreen = !fullscreen" />
+          @click="fullscreen = !fullscreen" aria-label="Fullscreen" />
       </q-carousel-control>
     </template>
   </q-carousel>

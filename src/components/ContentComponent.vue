@@ -63,7 +63,7 @@ export default defineComponent({
       { color: shiftColor(props.bgColor, 0.5) }
     ]));
     const styleTitle = computed(() => ([
-      { color: shiftColor(props.bgColor, 0.7) }
+      { color: shiftColor(props.bgColor, 0.6) }
     ]));
     const styleButton = computed(() => ([
       { background: shiftColor(props.bgColor, 0.7) },

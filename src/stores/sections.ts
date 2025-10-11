@@ -11,7 +11,7 @@ const sections: Section[] = [
         'Angular 20 Zoneless, SSR, NGRX, Karma/Jasmine unit tests, Playwright e2e tests, Vercel deploy',
       year: '2025',
       description:
-        'This is a starter template for Angular 20 Zoneless applications with server-side rendering (SSR) using NGRX for state management. It includes Karma/Jasmine for unit testing (coverage 100%) and Playwright for end-to-end (e2e) testing. The template is designed to be deployed on Vercel, providing a robust foundation for building high-performance web applications with Angular.',
+        '🚀 Angular 20 Zoneless Starter Starter template for Angular 20 Zoneless apps with SSR and NgRx state management. Includes 100% unit test coverage (Karma + Jasmine), e2e tests (Playwright), and is optimized for Vercel deployment.',
       github: 'https://github.com/alexanderkif/angular-zoneless-template',
       deploy: 'https://angular-zoneless-template.vercel.app/',
     },
@@ -42,7 +42,7 @@ const sections: Section[] = [
       stack: 'JavaScript Progressive Web App',
       year: '2025',
       description:
-        'Vibe coding experimental piano app. Install it on your device. Use it without Internet. Play with your keyboard or mouse on the PC or touch on mobile. Enjoy the music!',
+        'Couldn’t resist vibe coding again 🙂 My daughter’s class asked the kids to bring a musical instrument — even a toy piano would do. We have a full 88-key synth at home (way too heavy to carry 😅), so I built a little PWA toy piano for the phone that works offline. Then I added sampled piano sounds… and later asked AI to add a key-width switch. Fixing small things here and there is easy, but the fun part is realizing how much you can do when AI becomes your tireless coding partner 🤖🚀',
       github: 'https://github.com/alexanderkif/piano/',
       deploy: 'https://alexanderkif.github.io/piano/',
     },
@@ -72,7 +72,7 @@ const sections: Section[] = [
       stack: 'JavaScript Progressive Web App',
       year: '2025',
       description:
-        'Vibe coding experimental Sliding Picture Puzzle game. Install it on your device. Use it without Internet. Play with your keyboard or mouse on the PC or touch on mobile. Enjoy the game!',
+        'Vibe coding is seriously addictive 😅 I’ve been experimenting again — this time trying to build the classic “Fifteen” game with AI, giving it only verbal instructions. The funny part? AI is amazing with simple stuff, but once the requests pile up, it sometimes freezes or starts looping like a stuck record 🎶. The trick I found: jump in, fix the code a bit yourself, and then tell the AI “forget everything we talked about before — now just listen to this new request”. Works like magic ✨. I honestly think the future of programming belongs to those who don’t just use AI, but know how to tame it. 🚀',
       github: 'https://github.com/alexanderkif/picture-puzzle/',
       deploy: 'https://alexanderkif.github.io/picture-puzzle/',
     },
@@ -101,12 +101,12 @@ const sections: Section[] = [
       stack: 'ReactJS PWA',
       year: '2024',
       description: `🚀 Boost Your Memory and Learning with Cards! 📚✨
-\n🔹 Create Personalized Flashcards: Easily make groups of cards with terms, concepts, or any information you want to remember. Each card shows your chosen content on one side and its translation, definition, or examples on the other.
-\n🔹 Share Your Flashcards: Easily share your groups of flashcards with others, making collaborative learning a breeze.🚀
-\nStart your journey towards better memory and enhanced learning with Cards today!
-\n✨ I\'ve set up a Telegram group where everyone can share their flashcards! 📚 You can join the group directly from the top menu of the Cards app.
-\n🤖 Plus, I've created a Telegram bot to help keep things organized and ensure everyone follows the group rules.
-\n📋 I've also added some example messages with card files attached to help you get started. Can't wait to see you there! 🚀`,
+        🔹 Create Personalized Flashcards: Easily make groups of cards with terms, concepts, or any information you want to remember. Each card shows your chosen content on one side and its translation, definition, or examples on the other.
+        🔹 Share Your Flashcards: Easily share your groups of flashcards with others, making collaborative learning a breeze.🚀
+        Start your journey towards better memory and enhanced learning with Cards today!
+        ✨ I\'ve set up a Telegram group where everyone can share their flashcards! 📚 You can join the group directly from the top menu of the Cards app.
+        🤖 Plus, I've created a Telegram bot to help keep things organized and ensure everyone follows the group rules.
+        📋 I've also added some example messages with card files attached to help you get started. Can't wait to see you there! 🚀`,
       github: '',
       deploy: 'https://cards-pwa.vercel.app/',
     },
@@ -188,7 +188,7 @@ const sections: Section[] = [
       stack: 'Vue.js / Quasar framework',
       year: '2022',
       description:
-        "I have created a small application that can help you keep track of money. The application can be installed on the device as native. It stores all data directly in your browser's storage and can work without an Internet connection.",
+        'This is a simple yet practical application for tracking your expenses and income. It’s built as a Progressive Web App (PWA), which means you can install it on your device and use it just like a native app. 📱 Installable on desktop or mobile 🔒 All data stays on your device (stored in browser local storage) 🌐 Works completely offline — no internet required Perfect for quick personal finance tracking without the complexity of big apps.',
       github: 'https://github.com/alexanderkif/walletPWA',
       deploy: 'https://alexanderkif.github.io/walletPWA',
     },
@@ -223,7 +223,7 @@ const sections: Section[] = [
       stack: 'Vue.js / Quasar framework, Pinia store',
       year: '2022',
       description:
-        'The goal of the Spin Me Game is to place all the pieces on the plane by spinning them around its axis. If the space under the square is occupied, it is highlighted.',
+        'SpinMe Game is a casual puzzle game where the goal is to place all pieces on the board by spinning them around their axis. If a square is already occupied, the game highlights it to help you plan your moves. 🕹 How to play Select a piece – swipe UP or press the UP key, or simply click on a piece. Rotate the piece – swipe LEFT/RIGHT, use the arrow keys, or tap the on-screen rotate buttons. Place the piece – swipe DOWN, press the DOWN key, or tap the on-screen button. The game supports both keyboard controls and touch gestures, making it equally fun to play on desktop or mobile.',
       github: '',
       deploy: 'https://www.spinmegame.com',
     },
@@ -254,7 +254,7 @@ const sections: Section[] = [
         'React, Redux, Router, Thunk, Enzyme, Testing-library/react, hooks',
       year: '2021',
       description:
-        'This application is a React training course challenge. The Localhost API must be fully functional. Vercel uses a remote API that no longer works. Follow the link.',
+        'This project is a React training course challenge. It demonstrates state management with Redux, routing with React Router, asynchronous actions with Thunk, and testing with Enzyme and React Testing Library. ⚠️ Note: The app works fully with the local API. The Vercel deployment uses a remote API that is no longer functional.',
       github: 'https://github.com/alexanderkif/react-movies',
       deploy: 'https://react-movies-kappa.vercel.app/',
     },
@@ -309,8 +309,18 @@ const sections: Section[] = [
       title: 'Logistic task',
       stack: 'Vue.js / Quasar framework',
       year: '2021',
-      description:
-        'Logistics task. The description is in the README file on Github. Follow the link below. To test, download a sample xlsx file. Then paste it into the appropriate field in the program. And then wait for the tables to be counted.',
+      description: `This application is a logistics task simulator designed to plan and optimize delivery routes for a fleet of vehicles serving multiple stores in a district. Users can upload a sample Excel order file, and the program automatically calculates:
+        Optimal delivery routes and schedules for a 5-day workweek
+        Estimated transportation costs, including vehicle operation, hired transport, overtime, and penalties
+        Detailed analysis of delivery efficiency, considering load capacity, travel time, and operational constraints
+        The system accounts for:
+        Different product types with restrictions on combined transport
+        Vehicle limitations (own fleet and hired vehicles)
+        Loading, unloading, and break times
+        Overtime and underutilization penalties
+        The output includes tables, charts, and delivery plans, helping visualize schedules, costs, and route efficiency.
+        The full task description in Russian and the map diagram showing the location of the warehouse and stores can be found in the README file of the GitHub project.
+        To test the program, download a sample Excel file, paste it into the designated field, and wait for the tables and reports to be generated.`,
       github: 'https://github.com/alexanderkif/logist',
       deploy: 'https://alexanderkif.github.io/logist',
     },
@@ -355,7 +365,6 @@ const sections: Section[] = [
         { color: '#E1FFB0', percent: 100 },
       ],
       wave: { color1: '#E1FFB0', color2: '#FCFFF7' },
-      // image: 'fractal_star.svg',
     },
   },
   {
@@ -442,8 +451,16 @@ const sections: Section[] = [
       title: 'Shopping lists for groups of users',
       stack: 'Vercel serverless, Node.js, MongoDB, Vue/Quasar',
       year: '2020',
-      description:
-        'Several users can fill out one shopping list. The shopping list is stored in the Mongodb database. Vercel serverless api gets access to the database. To try it register/login and add the groups with ids: 5f152ec3ea3c4800083d7de6 and 5f13f49eca7ee00007801c84. Or use the next credentials for demo access user: Saha2 password: s222',
+      description: `This application allows multiple users to collaboratively manage shopping lists in real time. Each list can be filled out and updated by several users simultaneously. All data is securely stored in a MongoDB database, and the Vercel serverless API handles access and updates.
+        Features include:
+        Create, edit, and share shopping lists with a group of users
+        Real-time updates across all users in the same group
+        Persistent storage in MongoDB for reliable access from any device
+        Demo access available without registration
+        To try the app, you can register/login and use group IDs: 5f152ec3ea3c4800083d7de6 or 5f13f49eca7ee00007801c84.
+        Alternatively, use the demo credentials:
+        User: Saha2
+        Password: s222`,
       github: 'https://github.com/alexanderkif/todogroup',
       deploy: 'https://buyforme.vercel.app',
     },
@@ -473,8 +490,11 @@ const sections: Section[] = [
       title: 'Autonomous weather station with solar panels',
       stack: 'Arduino, Node.js, MongoDB, Vue/Quasar',
       year: '2020',
-      description:
-        'You can also store data from any sensors. In my case, for example, I took the weather sensor. The board starts, sends data and falls asleep for 5 minutes. To save battery power, the field effect transistor at pin D6 turns off the power to the BME280. The 18650 battery is controlled by input A0. If the battery voltage exceeds 4.2V, the D7 output breaks the battery charge circuit from the solar panel.',
+      description: `This is an autonomous weather station that can also store data from any sensors. In my setup, I used a weather sensor (BME280). The board starts, sends data, and then goes to sleep for 5 minutes to save power.
+        To optimize battery usage:
+        A field-effect transistor connected to pin D6 cuts off power to the BME280 when the board sleeps.
+        The 18650 lithium battery is monitored via input A0.
+        If the battery voltage exceeds 4.2V, the D7 output disables the solar panel charging circuit to prevent overcharging.`,
       github: 'https://github.com/alexanderkif/dometeo',
       deploy: 'https://alexanderkif.github.io/dometeo',
     },
@@ -524,8 +544,11 @@ const sections: Section[] = [
       title: 'Autonomous outdoor weather station Wi-Fi',
       stack: 'Arduino, NodeJS, MongoDB, MongoClient, JavaScript, Vue/Quasar',
       year: '2019',
-      description: `The weather station is powered by a lithium battery, which is charged from the solar panel. Data is transmitted via Wi-Fi to the back-end Zeit.co and stored in Mongodb. Universal get request: / data? Start = START_DATE & finish = FINISH_DATE & tframe = TFRAME & step = STEP. The TFRAME can be month, day, hour, minute. A small frontend is written on the quasar. To view, click TO DEPLOY.
-        \nThe last reading was on March 14, 2022, at 9:58 AM. I left my home at that time. If you want to see the graphs, select the period between July 1, 2019, and March 14, 2022.`,
+      description: `The weather station is powered by a lithium battery, charged by a solar panel. Data is transmitted via Wi-Fi to a back-end hosted on Zeit.co and stored in MongoDB.
+        A universal GET request is available:
+        /data?start=START_DATE&finish=FINISH_DATE&tframe=TFRAME&step=STEP
+        TFRAME can be month, day, hour, or minute.
+        A small frontend is built with Quasar. To view it, click [TO DEPLOY]. The last reading was on March 14, 2022, at 9:58 AM — at that time, I was forced to leave my home forever. To explore historical data and graphs, select the period from July 1, 2019, to March 14, 2022.`,
       github: 'https://github.com/alexanderkif/meteo',
       deploy: 'https://alexanderkif.github.io/meteo-front',
     },
@@ -566,12 +589,11 @@ const sections: Section[] = [
     name: 'TRACKER',
     active: true,
     content: {
-      title:
-        'My son won first place at the robotics competition. I was awarded a project supervisor certificate.',
+      title: 'Solar Tracker Robot – Junior Robotics Competition (2017)',
       stack: 'Quasar/vue, PWA',
       year: '2016',
       description:
-        "My son, with my help, made a robot that watches the sun. The tracker independently rotates the solar panels in the direction of light during the day to collect more solar energy. We took part in the Junior Russian schoolchildren's competition at Moscow University of MEPhI. And my son took first place there.",
+        "Mentored my son to build a robot that tracks the sun, automatically rotating solar panels to collect maximum energy. Participated in the Junior Russian Schoolchildren's Competition at MEPhI, where my son won first place, and I received a Project Supervisor Certificate. Skills demonstrated: PWA development, robotics, automation, and mentoring in STEM projects.",
       github: 'https://github.com/alexanderkif/solarTracker',
       deploy: 'https://alexanderkif.github.io/solarTracker/',
     },

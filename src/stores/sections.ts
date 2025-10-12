@@ -45,7 +45,7 @@ const sections: Section[] = [
       description:
         'Couldn’t resist vibe coding again 🙂 My daughter’s class asked the kids to bring a musical instrument — even a toy piano would do. We have a full 88-key synth at home (way too heavy to carry 😅), so I built a little PWA toy piano for the phone that works offline. Then I added sampled piano sounds… and later asked AI to add a key-width switch. Fixing small things here and there is easy, but the fun part is realizing how much you can do when AI becomes your tireless coding partner 🤖🚀',
       github: 'https://github.com/alexanderkif/piano/',
-      deploy: 'https://alexanderkif.github.io/piano/',
+      deploy: 'https://piano-pwa.vercel.app/',
     },
     images: [
       'piano1-min.png',
@@ -73,9 +73,9 @@ const sections: Section[] = [
       stack: 'JavaScript Progressive Web App',
       year: '2025',
       description:
-        'Vibe coding is seriously addictive 😅 I’ve been experimenting again — this time trying to build the classic “Fifteen” game with AI, giving it only verbal instructions. The funny part? AI is amazing with simple stuff, but once the requests pile up, it sometimes freezes or starts looping like a stuck record 🎶. The trick I found: jump in, fix the code a bit yourself, and then tell the AI “forget everything we talked about before — now just listen to this new request”. Works like magic ✨. I honestly think the future of programming belongs to those who don’t just use AI, but know how to tame it. 🚀',
+        'Vibe coding is seriously addictive 😅 I’ve been experimenting again — this time trying to build the classic “Fifteen” game with AI, giving it only verbal instructions. AI is amazing with simple stuff, but once the requests pile up, it sometimes freezes or starts looping like a stuck record 🎶. The trick I found: jump in, fix the code a bit yourself, and then tell the AI “forget everything we talked about before — now just listen to this new request”. Works like magic ✨. I honestly think the future of programming belongs to those who don’t just use AI, but know how to tame it. 🚀',
       github: 'https://github.com/alexanderkif/picture-puzzle/',
-      deploy: 'https://alexanderkif.github.io/picture-puzzle/',
+      deploy: 'https://picture-puzzle-pwa.vercel.app/',
     },
     images: [
       'picturePuzzle1-min.png',

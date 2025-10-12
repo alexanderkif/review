@@ -21,6 +21,7 @@ const sections: Section[] = [
       'angular-zoneless-3-min.png',
       'angular-zoneless-4-min.png',
       'angular-zoneless-5-min.png',
+      'angular-zoneless-6-min.png',
     ],
     bg: {
       gradient: [
